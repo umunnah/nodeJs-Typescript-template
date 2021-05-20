@@ -3,16 +3,16 @@ import * as SMTPTransport from "nodemailer/lib/smtp-transport";
 require("dotenv").config();
 
 const sendEmail = async (options: any) => {
-	const Host: any = process.env.SMTP_HOST;
-	const Port: any = process.env.SMTP_PORT;
+	const Host: any = process.env.SMTP_HOST || 'smtp.gmail.com';
+	const Port: any = process.env.SMTP_PORT || 587;
 
 	const nodemailerOptions: SMTPTransport.Options = {
 		host: Host,
 		port: Port,
 		secure: false,
 		auth: {
-			user: process.env.SMTP_EMAIL,
-			pass: process.env.SMTP_PASSWORD,
+			user: process.env.SMTP_EMAIL || 'example@example.com',
+			pass: process.env.SMTP_PASSWORD || 'password',
 		},
 	};
 
