@@ -64,8 +64,8 @@ class UserRepository {
 	}
 	// method to generateToken
 	generateToken(userId: string) {
-		const jwtSecret = `${process.env.JWT_SECRET}`;
-		const expireAt = parseInt(`${process.env.JWT_SECRET}`)
+		const jwtSecret = `${process.env.JWT_SECRET}` || 'secret';
+		const expireAt = parseInt(`${process.env.JWT_EXPIRE}`) || 6000
 		return jwt.sign(
 			{ id: userId },
 			jwtSecret,
