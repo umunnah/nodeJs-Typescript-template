@@ -1,6 +1,6 @@
 import supertest from "supertest";
-import app from "../bootstrap/app";
-import UserRepository from '../app/repository/user.repository'
+import app from "../src/bootstrap/app";
+import UserRepository from '../src/app/repository/user.repository'
 
 const request = supertest.agent(app);
 

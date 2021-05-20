@@ -8,6 +8,6 @@
   "resetMocks": true,
   "clearMocks": true,
   "roots": [
-    "<rootDir>/src"
+    "<rootDir>"
   ]
 }
