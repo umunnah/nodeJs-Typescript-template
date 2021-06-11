@@ -32,7 +32,7 @@ After installation, create a database and update the ``.env`` file with database
 To get this project on your local machine, you first need to clone it using the `git clone` command.
 
 ```
-git clone git+ssh://git@gitlab.com/korapay-engineering/be-arinze-umunnah.git
+git clone https://github.com/umunnah/nodeJs-Typescript-template.git
 ```
 
 Running this on your terminal will ensure you receive the latest version with all it's changes.
@@ -43,7 +43,7 @@ Once you've cloned it, install all dependencies using:
 npm install
 ```
 
-This should retrieve all the necessary dependencies named in the [package.json](https://gitlab.com/korapay-engineering/be-arinze-umunnah/-/blob/master/package.json) file.
+This should retrieve all the necessary dependencies named in the [package.json](https://github.com/umunnah/nodeJs-Typescript-template/-/blob/main/package.json) file.
 
 ### How To Use:
 
